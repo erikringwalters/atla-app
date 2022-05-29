@@ -1,0 +1,11 @@
+let characters = [
+    {
+
+    },
+]
+
+let creatures = [
+    {
+
+    },
+]
