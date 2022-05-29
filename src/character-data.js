@@ -2,6 +2,7 @@ let characters = [
   {
     id: 1,
     name: "Aang",
+    element: "Air",
     photo: "https://upload.wikimedia.org/wikipedia/en/8/86/Avatar_Aang.png",
     description:
       "Aang was a male Air Nomad born in 12 BG and the Avatar during the Hundred Year War, succeeding" +
@@ -12,6 +13,7 @@ let characters = [
   {
     id: 2,
     name: "Katara",
+    element: "Water",
     photo: "https://upload.wikimedia.org/wikipedia/en/f/fb/Katara.png",
     descritpion:
       "Katara is a waterbending master, born in the Southern Water Tribe to Chief Hakoda and his wife Kya. During her childhood, she was the only" +
@@ -23,6 +25,7 @@ let characters = [
   {
     id: 0,
     name: "",
+    element: "",
     photo: "",
     description: "",
   },
