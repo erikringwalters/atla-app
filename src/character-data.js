@@ -23,6 +23,14 @@ let characters = [
       "Aang left the South Pole on a journey toward the Northern Water Tribe.",
   },
   {
+    id: 3,
+    name: "Sokka",
+    element: "None",
+    photo: "https://upload.wikimedia.org/wikipedia/en/c/cc/Sokka.png",
+    description: "Sokka was a Water Tribe warrior of the Southern Water Tribe and the son of Chief Hakoda and Kya. Following the death of his mother and his father's " + 
+    "departure for war, Sokka was raised by his grandmother Kanna along with his younger sister Katara.",
+  },
+  {
     id: 0,
     name: "",
     element: "",
