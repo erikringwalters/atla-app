@@ -39,6 +39,6 @@ export function getCreatures() {
   return creatures;
 }
 
-export function getCreature(id) {
-  return creatures.find((creature) => creature.id === id);
+export function getCreature(name) {
+  return creatures.find((creature) => creature.name === name);
 }

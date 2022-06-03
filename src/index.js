@@ -5,6 +5,8 @@ import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Characters from './routes/characters'
+import Character from './routes/character'
+
 import Creatures from './routes/creatures'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -14,6 +16,7 @@ root.render(
       <Route path='/' element={<App />}>
       <Route path="/characters" element={<Characters />} />
         <Route path="/creatures" element={<Creatures />} />
+        <Route path=":characterId" element={<Character />} />
       </Route>
     </Routes>
   </BrowserRouter>

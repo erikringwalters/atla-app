@@ -31,11 +31,25 @@ let characters = [
     "departure for war, Sokka was raised by his grandmother Kanna along with his younger sister Katara.",
   },
   {
-    id: 0,
-    name: "",
-    element: "",
-    photo: "",
-    description: "",
+    id: 4,
+    name: "Zuko",
+    element: "Fire",
+    photo: "https://cdn.quotesgram.com/img/8/79/1872916203-5149850917_prince_zuko_xlarge.png",
+    description: "Zuko is a Fire Nation royal and firebending master who reigned as Fire Lord from 100 AG until his abdication in 167 AG. He is" +
+     " the eldest child and only son of Princess Ursa and Fire Lord Ozai. Originally the primary enemy of Team Avatar, Zuko devoted three years to" +
+      " trying to capture the long-lost Avatar to end his banishment and regain his honor as Crown Prince of the Fire Nation. He is recognizable " +
+       "by the distinctive burn scar on the left side of his face, which was given to him by his father, Ozai, shortly before his banishment as a" + 
+       " result of an incident in which he unintentionally disrespected his father by speaking out of turn and refusing to duel him.",
+  },
+  {
+    id: 5,
+    name: "Toph",
+    element: "Earth",
+    photo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Toph_Beifong.png/220px-Toph_Beifong.png",
+    description: "Toph Beifong is an earthbending master, one of the most powerful of her time, and the discoverer of metalbending. Blind since " + 
+    "birth, Toph was constantly treated condescendingly because of her visual impairment, particularly by her overprotective parents, Lao and Poppy " + 
+    "Beifong. Upon discovering badgermoles, earthbending animals who are also blind, she learned how to use earthbending as an extension of her senses." + 
+    " This gave her the ability to \"see\" every vibration that passes through the ground.",
   },
 ];
 
@@ -46,3 +60,4 @@ export function getCharacters() {
 export function getCharacter(id) {
   return characters.find((character) => character.id === id);
 }
+
