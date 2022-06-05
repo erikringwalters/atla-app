@@ -5,14 +5,13 @@ export default function Character() {
   let navigate = useNavigate();
   let location = useLocation();
   let params = useParams();
-  let character = getCharacter(parseInt(params.characterId, 10));
+  let character = getCharacter(params.characterName);
   return (
     <main style={{ padding: "1rem" }}>
-      <h2>Total Due: {character.amount}</h2>
-      <p>
-        {character.name}: {character.id}
-      </p>
-      <p>Due Date: {character.due}</p>
+      {/* <h2>{character.name}</h2> */}
+      <img src={character.photo} />
+        
+      <p>{character.description}</p>
       <p>
         <button
           onClick={() => {

@@ -23,7 +23,7 @@ root.render(
             </main>
           }
           />
-          <Route path=":characterId" element={<Character />} />
+          <Route path=":characterName" element={<Character />} />
         </Route>
 
         <Route

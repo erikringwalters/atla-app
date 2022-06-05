@@ -55,7 +55,7 @@ export function getCharacters() {
   return characters;
 }
 
-export function getCharacter(id) {
-  return characters.find((character) => character.id === id);
+export function getCharacter(name) {
+  return characters.find((character) => character.name === name);
 }
 

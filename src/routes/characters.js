@@ -43,8 +43,8 @@ export default function Characters() {
                 margin: "1rem 0",
                 color: isActive ? "red" : "",
               })}
-              to={`/characters/${character.id}`}
-              key={character.id}
+              to={`/characters/${character.name}`}
+              key={character.name}
             >
               {character.name}
             </QueryNavLink>
