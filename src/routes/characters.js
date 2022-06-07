@@ -12,12 +12,7 @@ export default function Characters() {
 
   return (
     <div style={{ display: "flex" }}>
-      <nav
-        style={{
-          borderRight: "solid 1px",
-          padding: "1rem",
-        }}
-      >
+      <nav>
         <input
           value={searchParams.get("filter") || ""}
           onChange={(event) => {
@@ -46,6 +41,7 @@ export default function Characters() {
               to={`/characters/${character.name}`}
               key={character.name}
             >
+              <img src={character.photo} alt={character.name} />
               {character.name}
             </NavLink>
           ))}
