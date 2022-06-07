@@ -23,8 +23,9 @@ root.render(
             </main>
           }
           />
-          <Route path=":characterName" element={<Character />} />
+
         </Route>
+        <Route path="/characters/:characterName" element={<Character />} />
 
         <Route
           path="*"

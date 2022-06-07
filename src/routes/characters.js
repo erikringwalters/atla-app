@@ -37,7 +37,7 @@ export default function Characters() {
             return name.startsWith(filter.toLowerCase());
           })
           ?.map((character) => (
-            <QueryNavLink
+            <NavLink
               style={({ isActive }) => ({
                 display: "block",
                 margin: "1rem 0",
@@ -47,7 +47,7 @@ export default function Characters() {
               key={character.name}
             >
               {character.name}
-            </QueryNavLink>
+            </NavLink>
           ))}
       </nav>
       <Outlet />
