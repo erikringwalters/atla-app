@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { getCreatures } from "../creature-data";
+import { getCreatures } from "../../creature-data";
 
 export default function creatures() {
     let creatures = getCreatures();

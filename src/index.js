@@ -4,10 +4,10 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Characters from "./routes/characters";
-import Character from "./routes/character";
+import Characters from "./components/character/characters";
+import Character from "./components/character/character";
 
-import Creatures from "./routes/creatures";
+import Creatures from "./components/creature/creatures";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -1,7 +1,7 @@
 import { useParams, useNavigate, useLocation } from "react-router-dom";
-import { getCharacter } from "../character-data";
+import { getCharacter } from "../../character-data";
 
-import Card from "../components/ui/Card";
+import Card from "../ui/Card";
 
 export default function Character() {
   let navigate = useNavigate();

@@ -1,4 +1,4 @@
-import Card from "../components/ui/Card";
+import Card from "../../components/ui/Card";
 
 import {
   useLocation,
@@ -6,7 +6,7 @@ import {
   Outlet,
   useSearchParams,
 } from "react-router-dom";
-import { getCharacters } from "../character-data";
+import { getCharacters } from "../../character-data";
 
 export default function Characters() {
   let characters = getCharacters();
