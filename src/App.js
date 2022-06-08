@@ -5,14 +5,21 @@ import { Outlet, Link } from "react-router-dom";
 export default function App() {
   return (
     <div>
-      <row id="titleRow">
-        <span>
-          <img className="titleElement" src="../WATER.svg" />
-        </span>
-        <span>
-          <h1>Avatar: The Last Airbender Trading Cards!</h1>
-        </span>
-      </row>
+        <h1>
+          <span>
+            <img className="titleElementIcon" src="../element-icons/WATER.png" />
+          </span>
+          <span>
+            <img className="titleElementIcon" src="../element-icons/EARTH.png" />
+          </span>
+          <span className='titleText'>Avatar: The Last Airbender Trading Cards!</span>
+          <span>
+            <img className="titleElementIcon" src="../element-icons/FIRE.png" />
+          </span>
+          <span>
+            <img className="titleElementIcon" src="../element-icons/AIR.png" />
+          </span>
+        </h1>
       <nav
         style={{
           borderBottom: "solid 1px",

@@ -49,18 +49,21 @@
 .None {
   border-color: black;
 }
+h1 {
+  font-size: 32pt;
+  top: 75%;
 
-#titleRow {
-  display: inline;
 }
 
-.titleElement {
-  max-width: 200px;
+.titleElementIcon {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 50px;
 }
 
 .disclaimer {
   margin: 20px;
-  color: gray;
+  color: lightgray;
 }
 
 @keyframes App-logo-spin {
