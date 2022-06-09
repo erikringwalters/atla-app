@@ -1,6 +1,5 @@
 import Card from "../../components/ui/Card";
-import classes from './character.module.css';
-import './character.css';
+import "./character.css";
 
 import {
   useLocation,
@@ -35,14 +34,17 @@ export default function Characters() {
           return name.startsWith(filter.toLowerCase());
         })
         ?.map((character) => (
-          <NavLink to={`/characters/${character.name}`} key={character.name}>
-            
-            <div className={classes.card}>
-              <div className={character.element}>
-              <img src={character.photo} alt={character.name} />
-              {character.name}
-              </div>
-            </div>
+          <NavLink className="cardLink" to={`/characters/${character.name}`} key={character.name}>
+            <table>
+              <td>
+                <Card>
+                  <div className={"cardContent " + character.element}>
+                    <img src={character.photo} alt={character.name} />
+                    {character.name}
+                  </div>
+                </Card>
+              </td>
+            </table>
           </NavLink>
         ))}
     </nav>
