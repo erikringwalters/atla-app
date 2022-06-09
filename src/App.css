@@ -28,30 +28,9 @@
   color: #61dafb;
 }
 
-.Water {
-  border-color: darkblue;
-  border: 4px;
-
-}
-
-.Earth {
-  border-color: darkgreen;
-}
-
-.Fire {
-  border-color: firebrick;
-}
-
-.Air {
-  border-color: goldenrod;
-}
-
-.None {
-  border-color: black;
-}
 h1 {
   font-size: 32pt;
-  top: 75%;
+  top: 90%;
 
 }
 

@@ -1,0 +1,28 @@
+.card {
+    margin: 20px;
+    border-width: 5px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 30rem;
+    max-height: 60rem;
+  }
+  .water {
+    background-color: #75afcb;
+    color: #75afcb;
+  }
+  .earth {
+    background-color: #55a253;
+  }
+  
+  .fire {
+    background-color: #cc1d1d;
+  }
+  
+  .air {
+    background-color: #fea90d;
+  }
+  
+  .none {
+    background-color: lightslategray;
+  }
+  

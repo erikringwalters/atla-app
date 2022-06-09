@@ -1,4 +1,6 @@
 import Card from "../../components/ui/Card";
+import classes from './character.module.css';
+import './character.css';
 
 import {
   useLocation,
@@ -34,10 +36,13 @@ export default function Characters() {
         })
         ?.map((character) => (
           <NavLink to={`/characters/${character.name}`} key={character.name}>
-            <Card>
-              <img className={character.element} src={character.photo} alt={character.name} />
+            
+            <div className={classes.card}>
+              <div className={character.element}>
+              <img src={character.photo} alt={character.name} />
               {character.name}
-            </Card>
+              </div>
+            </div>
           </NavLink>
         ))}
     </nav>

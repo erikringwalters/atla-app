@@ -2,7 +2,7 @@ let characters = [
   {
     id: 1,
     name: "Aang",
-    element: "Air",
+    element: "air",
     photo: "https://upload.wikimedia.org/wikipedia/en/8/86/Avatar_Aang.png",
     description: "Aang was a male Air Nomad born in 12 BG and the Avatar during the Hundred Year War, succeeding" +
       " Avatar Roku and preceding Avatar Korra. As the Avatar of his time, he was the only person capable of using all" +
@@ -12,7 +12,7 @@ let characters = [
   {
     id: 2,
     name: "Katara",
-    element: "Water",
+    element: "water",
     photo: "https://upload.wikimedia.org/wikipedia/en/f/fb/Katara.png",
     description: "Katara is a waterbending master, born in the Southern Water Tribe to Chief Hakoda and his wife Kya. During her childhood, she was the only" +
       "waterbender living in the Southern Water Tribe. After losing her mother in a Fire Nation raid and her father left to battle against the Fire Nation in the " +
@@ -23,7 +23,7 @@ let characters = [
   {
     id: 3,
     name: "Sokka",
-    element: "None",
+    element: "none",
     photo: "https://upload.wikimedia.org/wikipedia/en/c/cc/Sokka.png",
     description: "Sokka was a Water Tribe warrior of the Southern Water Tribe and the son of Chief Hakoda and Kya. Following the death of his mother and his father's " + 
     "departure for war, Sokka was raised by his grandmother Kanna along with his younger sister Katara.",
@@ -31,7 +31,7 @@ let characters = [
   {
     id: 4,
     name: "Zuko",
-    element: "Fire",
+    element: "fire",
     photo: "https://cdn.quotesgram.com/img/8/79/1872916203-5149850917_prince_zuko_xlarge.png",
     description: "Zuko is a Fire Nation royal and firebending master who reigned as Fire Lord from 100 AG until his abdication in 167 AG. He is" +
      " the eldest child and only son of Princess Ursa and Fire Lord Ozai. Originally the primary enemy of Team Avatar, Zuko devoted three years to" +
@@ -42,7 +42,7 @@ let characters = [
   {
     id: 5,
     name: "Toph",
-    element: "Earth",
+    element: "earth",
     photo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Toph_Beifong.png/220px-Toph_Beifong.png",
     description: "Toph Beifong is an earthbending master, one of the most powerful of her time, and the discoverer of metalbending. Blind since " + 
     "birth, Toph was constantly treated condescendingly because of her visual impairment, particularly by her overprotective parents, Lao and Poppy " + 
