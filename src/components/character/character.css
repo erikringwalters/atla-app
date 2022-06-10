@@ -1,9 +1,11 @@
 .cardContent {
-    height: 100%;
-    width: 100%;
-    flex-grow : 1;
     border-width: 10px;
     border-color: goldenrod;
+    border-radius: 6px;
+    width: 100%;
+}
+.cardImg {
+  max-height: 15rem;
 }
 .water {
     background-color: #75afcb;

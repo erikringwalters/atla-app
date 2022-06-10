@@ -39,8 +39,8 @@ export default function Characters() {
               <td>
                 <Card>
                   <div className={"cardContent " + character.element}>
-                    <img src={character.photo} alt={character.name} />
-                    {character.name}
+                  <h3>{character.name}</h3>
+                    <img className='cardImg' src={character.photo} alt={character.name} />
                   </div>
                 </Card>
               </td>
