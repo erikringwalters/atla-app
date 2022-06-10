@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -28,21 +29,50 @@
   color: #61dafb;
 }
 
+
+.titleHead {
+  color: white;
+  background-color: #202020;
+}
+
 h1 {
+  text-align: center;
   font-size: 32pt;
-  top: 90%;
+  font-family: "Herculanum-Regular";
 
 }
 
 .titleElementIcon {
-  margin-left: 10px;
-  margin-right: 10px;
-  max-width: 50px;
+  margin: 10px;
+  max-width: 75px;
+
+}
+
+#waterIcon, #earthIcon {
+  margin-bottom: -30px;
+}
+
+#fireIcon, #airIcon {
+  margin-top: -30px;
+
+}
+
+#earthIcon, #airIcon {
+  float: right;
+}
+
+nav {
+  margin: 10px;
+  padding-bottom: 10px;
+  color: white;
 }
 
 .disclaimer {
   margin: 20px;
   color: lightgray;
+}
+a {
+  color: white;
 }
 
 @keyframes App-logo-spin {

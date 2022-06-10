@@ -35,16 +35,14 @@ export default function Characters() {
         })
         ?.map((character) => (
           <NavLink className="cardLink" to={`/characters/${character.name}`} key={character.name}>
-            <table>
-              <td>
+           
                 <Card>
                   <div className={"cardContent " + character.element}>
                   <h3>{character.name}</h3>
                     <img className='cardImg' src={character.photo} alt={character.name} />
                   </div>
                 </Card>
-              </td>
-            </table>
+            
           </NavLink>
         ))}
     </nav>

@@ -5,30 +5,28 @@ import { Outlet, Link } from "react-router-dom";
 export default function App() {
   return (
     <div>
-        <h1>
-          <span>
-            <img className="titleElementIcon" src="../element-icons/WATER.png" />
-          </span>
-          <span>
-            <img className="titleElementIcon" src="../element-icons/EARTH.png" />
-          </span>
-          <span className='titleText'>Avatar: The Last Airbender Trading Cards!</span>
-          <span>
-            <img className="titleElementIcon" src="../element-icons/FIRE.png" />
-          </span>
-          <span>
-            <img className="titleElementIcon" src="../element-icons/AIR.png" />
-          </span>
-        </h1>
-      <nav
-        style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem",
-        }}
-      >
-        <Link to="/characters">Characters</Link> |{" "}
-        <Link to="/creatures">Creatures</Link>
-      </nav>
+      <div className="titleHead">
+        <span>
+          <img id="waterIcon" className="titleElementIcon" src="../element-icons/WATER.png" />
+        </span>
+        <span>
+          <img id="earthIcon" className="titleElementIcon" src="../element-icons/EARTH.png" />
+        </span>
+        <span className="titleText">
+          <h1>Avatar: The Last Airbender Trading Cards!</h1>
+        </span>
+        <span>
+          <img id="fireIcon" className="titleElementIcon" src="../element-icons/FIRE.png" />
+        </span>
+        <span>
+          <img id="airIcon" className="titleElementIcon" src="../element-icons/AIR.png" />
+        </span>
+        <nav>
+          <Link to="/characters">Characters</Link> |{" "}
+          <Link to="/creatures">Creatures</Link>
+        </nav>
+      </div>
+
       <Outlet />
       <p className="disclaimer">
         DISCLAMER: This website contains purely fictional products/info. This
