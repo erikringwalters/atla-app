@@ -1,49 +1,57 @@
 .cardContent {
   border-width: 10px;
-  border: 5px solid goldenrod;
-  border-radius: 6px;
+  border: 15px solid #F7B616;
+  border-radius: 10px;
   width: 100%;
+  text-align: center;
 }
+
+.cardImgContainer {
+  margin: auto;
+  border: 5px solid #F7B616;
+  max-width: 15rem;
+}
+
 .cardImg {
-  max-height: 15rem;
-  border: 5px solid #555;
-  background-color: white;
+  max-height: 10rem;
 }
 
 .water {
-  background-color: #75afcb;
-}
-.earth {
-  background-color: #55a253;
-}
-
-.fire {
-  background-color: #cc1d1d;
-}
-
-.air {
-  background-color: #fea90d;
-}
-
-.none {
-  background-color: slategray;
-}
-
-.waterImg {
   background-color: #a4daf5;
 }
-.earthImg {
+
+.earth {
   background-color: #b7f5b5;
 }
 
-.fireImg {
+.fire {
   background-color: #ed7777;
 }
 
-.airImg {
+.air {
   background-color: #f2d296;
 }
 
+.none {
+  background-color: #bfd1e3;
+}
+
+.waterImg {
+  background-color: #75afcb;
+}
+
+.earthImg {
+  background-color: #55a253;
+}
+
+.fireImg {
+  background-color: #cc1d1d;
+}
+
+.airImg {
+  background-color: #fea90d;
+}
+
 .noneImg {
-  background-color: lightslategray;
+  background-color: #708090;
 }

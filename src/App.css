@@ -44,6 +44,8 @@ h1 {
 
 .titleElementIcon {
   margin: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
   max-width: 75px;
 
 }
