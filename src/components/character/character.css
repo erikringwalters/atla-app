@@ -1,28 +1,49 @@
 .cardContent {
-    border-width: 10px;
-    border-color: goldenrod;
-    border-radius: 6px;
-    width: 100%;
+  border-width: 10px;
+  border: 5px solid goldenrod;
+  border-radius: 6px;
+  width: 100%;
 }
 .cardImg {
   max-height: 15rem;
+  border: 5px solid #555;
+  background-color: white;
 }
+
 .water {
-    background-color: #75afcb;
-  }
-  .earth {
-    background-color: #55a253;
-  }
-  
-  .fire {
-    background-color: #cc1d1d;
-  }
-  
-  .air {
-    background-color: #fea90d;
-  }
-  
-  .none {
-    background-color: slategray;
-  }
-  
+  background-color: #75afcb;
+}
+.earth {
+  background-color: #55a253;
+}
+
+.fire {
+  background-color: #cc1d1d;
+}
+
+.air {
+  background-color: #fea90d;
+}
+
+.none {
+  background-color: slategray;
+}
+
+.waterImg {
+  background-color: #a4daf5;
+}
+.earthImg {
+  background-color: #b7f5b5;
+}
+
+.fireImg {
+  background-color: #ed7777;
+}
+
+.airImg {
+  background-color: #f2d296;
+}
+
+.noneImg {
+  background-color: lightslategray;
+}
