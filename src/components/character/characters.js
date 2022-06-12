@@ -15,7 +15,7 @@ export default function Characters() {
 
   return (
     <nav>
-      <input
+      <input className="searchBar"
         value={searchParams.get("filter") || ""}
         onChange={(event) => {
           let filter = event.target.value;
@@ -36,7 +36,7 @@ export default function Characters() {
         ?.map((character) => (
           <NavLink className="cardLink" to={`/characters/${character.name}`} key={character.name}>
            
-                <Card>
+                <Card className="card">
                   <div className={"cardContent " + character.element}>
                   <h3 className="cardTitle">{character.name}</h3>
                   <div className={"cardImgContainer " + character.element + "Img"}>
