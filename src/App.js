@@ -22,8 +22,9 @@ export default function App() {
           <img id="airIcon" className="titleElementIcon" src="../element-icons/AIR.png" />
         </span>
         <nav>
-          <Link to="/characters">Characters</Link> |{" "}
-          <Link to="/creatures">Creatures</Link>
+          <Link className="navLink" to="/characters">Characters</Link> 
+          {" | "}
+          <Link className="navLink" to="/creatures">Creatures</Link>
         </nav>
       </div>
 

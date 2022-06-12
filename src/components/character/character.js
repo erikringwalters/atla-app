@@ -13,7 +13,6 @@ export default function Character() {
       <Card>
         <h2>{character.name}</h2>
         <img src={character.photo} />
-
         <p>{character.description}</p>
       </Card>
     </div>

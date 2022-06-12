@@ -15,17 +15,23 @@ export default function Characters() {
 
   return (
     <nav>
-      <input className="searchBar"
-        value={searchParams.get("filter") || ""}
-        onChange={(event) => {
-          let filter = event.target.value;
-          if (filter) {
-            setSearchParams({ filter });
-          } else {
-            setSearchParams({});
-          }
-        }}
-      />
+      <div className="searchBarContainer">
+        <input
+          type="text"
+          spellCheck="false"
+          className="searchBar"
+          value={searchParams.get("filter") || ""}
+          onChange={(event) => {
+            let filter = event.target.value;
+            if (filter) {
+              setSearchParams({ filter });
+            } else {
+              setSearchParams({});
+            }
+          }}
+        />
+        <img className="magnifyingGlass" src="../../magnifying-glass.svg" />
+      </div>
       {characters
         ?.filter((character) => {
           let filter = searchParams.get("filter");
@@ -34,17 +40,25 @@ export default function Characters() {
           return name.startsWith(filter.toLowerCase());
         })
         ?.map((character) => (
-          <NavLink className="cardLink" to={`/characters/${character.name}`} key={character.name}>
-           
-                <Card className="card">
-                  <div className={"cardContent " + character.element}>
-                  <h3 className="cardTitle">{character.name}</h3>
-                  <div className={"cardImgContainer " + character.element + "Img"}>
-                    <img className={"cardImg"}  src={character.photo} alt={character.name} />
-                    </div>
-                  </div>
-                </Card>
-            
+          <NavLink
+            className="cardLink"
+            to={`/characters/${character.name}`}
+            key={character.name}
+          >
+            <Card className="card">
+              <div className={"cardContent " + character.element}>
+                <h3 className="cardTitle">{character.name}</h3>
+                <div
+                  className={"cardImgContainer " + character.element + "Img"}
+                >
+                  <img
+                    className={"cardImg"}
+                    src={character.photo}
+                    alt={character.name}
+                  />
+                </div>
+              </div>
+            </Card>
           </NavLink>
         ))}
     </nav>

@@ -1,11 +1,29 @@
-.searchBar {
-  display: block;
-  margin: 20px;
-  height: 2rem;
-  width: 50%;
-  border-radius: 6px;
-
+.searchBarContainer {
+  display: flex;
+  flex-direction: row;
 }
+.searchBar {
+  margin-left: 20px;
+  font-size: 18pt;
+  height: 3rem;
+  width: 50%;
+  border-radius: 20px;
+  text-decoration: none;
+  padding-left: 15px;
+  margin-top: 20px;
+  
+}
+.magnifyingGlass {
+  height: 2rem;
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -45px;
+  margin-top: 30px;
+}
+
+
 .cardLink{ 
   text-align: center;
   margin: auto;
@@ -14,7 +32,7 @@
   border: 15px solid #ffbb00;
   border-radius: 10px;
   text-align: center;
-  width: 20rem;
+  max-width: 20rem;
   height: 30rem;
 }
 
@@ -22,10 +40,10 @@
   color: black;
   text-decoration-line:none;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 15px;
   font-size: 18pt;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 a {
@@ -35,10 +53,12 @@ a {
 .cardImgContainer {
   margin: auto;
   border: 5px solid #ffbb00;
-  max-width: 15rem;
+  max-width: 16rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cardImg {
+  margin-top: 5px;
   max-height: 12rem;
 }
 
@@ -51,7 +71,7 @@ a {
 }
 
 .fire {
-  background-color: #ed7777;
+  background-color: #f78b8b;
 }
 
 .air {
