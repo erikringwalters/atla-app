@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './fonts/Herculanum/Herculanum-Regular.ttf';
+import './fonts/Herculanum/Herculanum-Regular.woff';
 
 import Characters from "./components/character/characters";
 import Character from "./components/character/character";

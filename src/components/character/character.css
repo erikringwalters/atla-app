@@ -4,6 +4,7 @@
   border-radius: 10px;
   width: 100%;
   text-align: center;
+  font-family: 'Segoe';
 }
 
 .cardImgContainer {
@@ -13,7 +14,7 @@
 }
 
 .cardImg {
-  max-height: 10rem;
+  max-height: 12rem;
 }
 
 .water {

@@ -32,7 +32,7 @@ let characters = [
     id: 4,
     name: "Zuko",
     element: "fire",
-    photo: "https://cdn.quotesgram.com/img/8/79/1872916203-5149850917_prince_zuko_xlarge.png",
+    photo: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b8d2b12-21e8-4931-8a6d-fb9ecdd60383/de4zj6r-08b8a337-4c32-46d5-9cf9-8c6f6d66b6ce.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViOGQyYjEyLTIxZTgtNDkzMS04YTZkLWZiOWVjZGQ2MDM4M1wvZGU0emo2ci0wOGI4YTMzNy00YzMyLTQ2ZDUtOWNmOS04YzZmNmQ2NmI2Y2UucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.qqDvvtcdb5f8PbE6z96Dp34zyWSOpXflLttura-pPlY",
     description: "Zuko is a Fire Nation royal and firebending master who reigned as Fire Lord from 100 AG until his abdication in 167 AG. He is" +
      " the eldest child and only son of Princess Ursa and Fire Lord Ozai. Originally the primary enemy of Team Avatar, Zuko devoted three years to" +
       " trying to capture the long-lost Avatar to end his banishment and regain his honor as Crown Prince of the Fire Nation. He is recognizable " +
