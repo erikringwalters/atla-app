@@ -1,3 +1,6 @@
+nav {
+  /* text-align: center; */
+}
 .searchBarContainer {
   display: flex;
   flex-direction: row;
@@ -10,7 +13,7 @@
   text-decoration: none;
   padding-left: 15px;
   margin-top: 20px;
-  min-width: 15rem;
+  /* min-width: 15rem; */
 }
 .magnifyingGlass {
   height: 2rem;
@@ -22,10 +25,10 @@
   margin-top: 30px;
 }
 
-
-.cardLink{ 
+.cardLink {
   text-align: center;
   margin: auto;
+  margin-left: 10px;
 }
 .cardContent {
   border: 15px solid #ffbb00;
@@ -37,7 +40,7 @@
 
 .cardTitle {
   color: black;
-  text-decoration-line:none;
+  text-decoration-line: none;
   text-align: left;
   margin-left: 15px;
   font-size: 18pt;
@@ -78,7 +81,7 @@ a {
 }
 
 .none {
-  background-color: #BEBEBE;
+  background-color: #bebebe;
 }
 
 .waterImg {
