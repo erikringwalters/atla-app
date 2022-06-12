@@ -38,7 +38,7 @@ export default function Characters() {
            
                 <Card>
                   <div className={"cardContent " + character.element}>
-                  <h3>{character.name}</h3>
+                  <h3 className="cardTitle">{character.name}</h3>
                   <div className={"cardImgContainer " + character.element + "Img"}>
                     <img className={"cardImg"}  src={character.photo} alt={character.name} />
                     </div>

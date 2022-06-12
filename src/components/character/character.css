@@ -1,15 +1,29 @@
 .cardContent {
   border-width: 10px;
-  border: 15px solid #F7B616;
+  border: 15px solid #ffbb00;
   border-radius: 10px;
   width: 100%;
   text-align: center;
   font-family: 'Segoe';
 }
 
+.cardTitle {
+  color: black;
+  text-decoration-line:none;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 18pt;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .cardImgContainer {
   margin: auto;
-  border: 5px solid #F7B616;
+  border: 5px solid #ffbb00;
   max-width: 15rem;
 }
 
@@ -34,7 +48,7 @@
 }
 
 .none {
-  background-color: #bfd1e3;
+  background-color: #BEBEBE;
 }
 
 .waterImg {
@@ -54,5 +68,5 @@
 }
 
 .noneImg {
-  background-color: #708090;
+  background-color: #787878;
 }
