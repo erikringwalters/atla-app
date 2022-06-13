@@ -3,7 +3,7 @@ let creatures = [
     id: 1,
     name: "Winged Lemur",
     photo:
-      "https://i.pinimg.com/564x/d4/cf/6c/d4cf6c79ae6eac443745d7e1e135a080--the-last-avatar-avatar-the-last-airbender.jpg",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b8d2b12-21e8-4931-8a6d-fb9ecdd60383/de50k2g-954a5950-2329-485e-9717-0d808e80e492.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViOGQyYjEyLTIxZTgtNDkzMS04YTZkLWZiOWVjZGQ2MDM4M1wvZGU1MGsyZy05NTRhNTk1MC0yMzI5LTQ4NWUtOTcxNy0wZDgwOGU4MGU0OTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.P0Tye7RyNg_0L2MygE_ZW_HgL1OuuZC_fkWb_5b39qQ",
     description:
       "The winged lemur is a small, energetic animal that is critically endangered. Momo is the only known survivor of winged lemurs that survived" +
       " the Air Nomad Genocide, though the ring-tailed winged lemur, a closely related species, was discovered after the end of the Hundred Year War.",
@@ -27,12 +27,12 @@ let creatures = [
       "but can also be found in the Earth Kingdom, as well as Avatar Korra Park in Republic City. At least two kinds of turtle ducks are known, with one group " +
       "lacking wings while the other has them.",
   },
-  {
-    id: 0,
-    name: "",
-    photo: "",
-    description: "",
-  },
+  // {
+  //   id: 0,
+  //   name: "",
+  //   photo: "",
+  //   description: "",
+  // },
 ];
 
 export function getCreatures() {

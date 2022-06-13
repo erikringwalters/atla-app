@@ -1,6 +1,7 @@
 import Card from "../../components/ui/Card";
 import SearchBar from '../searchBar/SearchBar';
 import "../../components/ui/card.css";
+import "./creature.css";
 import {
   NavLink,
   useSearchParams,
@@ -29,10 +30,10 @@ export default function Creatures() {
             key={creature.name}
           >
             <Card className="card">
-              <div className={"cardContent " + creature.element}>
+              <div className={"cardContent creature"}>
                 <h3 className="cardTitle">{creature.name}</h3>
                 <div
-                  className={"cardImgContainer " + creature.element + "Img"}
+                  className={"cardImgContainer creatureImg"}
                 >
                   <img
                     className={"cardImg"}
