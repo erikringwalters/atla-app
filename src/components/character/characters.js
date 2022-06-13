@@ -2,9 +2,7 @@ import Card from "../../components/ui/Card";
 import SearchBar from '../searchBar/SearchBar';
 import "../../components/ui/card.css";
 import {
-  useLocation,
   NavLink,
-  Outlet,
   useSearchParams,
 } from "react-router-dom";
 import "./character.css";
@@ -49,11 +47,6 @@ export default function Characters() {
           </NavLink>
         ))}
     </nav>
-    // <Outlet />
   );
 
-  function QueryNavLink({ to, ...props }) {
-    let location = useLocation();
-    return <NavLink to={to + location.search} {...props} />;
-  }
 }
