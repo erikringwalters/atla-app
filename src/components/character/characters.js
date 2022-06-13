@@ -1,37 +1,24 @@
 import Card from "../../components/ui/Card";
-import "./character.css";
-
+import SearchBar from '../searchBar/SearchBar';
+import "../../components/ui/card.css";
 import {
   useLocation,
   NavLink,
   Outlet,
   useSearchParams,
 } from "react-router-dom";
+import "./character.css";
+
+
 import { getCharacters } from "../../character-data";
 
 export default function Characters() {
   let characters = getCharacters();
-  let [searchParams, setSearchParams] = useSearchParams();
+  let [searchParams] = useSearchParams();
 
   return (
     <nav>
-      <div className="searchBarContainer">
-        <input
-          type="text"
-          spellCheck="false"
-          className="searchBar"
-          value={searchParams.get("filter") || ""}
-          onChange={(event) => {
-            let filter = event.target.value;
-            if (filter) {
-              setSearchParams({ filter });
-            } else {
-              setSearchParams({});
-            }
-          }}
-        />
-        <img className="magnifyingGlass" src="../../magnifying-glass.svg" />
-      </div>
+     <SearchBar />
       {characters
         ?.filter((character) => {
           let filter = searchParams.get("filter");
