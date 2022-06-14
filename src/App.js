@@ -1,10 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Outlet, Link } from "react-router-dom";
+import Headerbar from "./components/headerBar/Headerbar";
 
 export default function App() {
   return (
     <div>
+      <Headerbar />
       <div className="titleHead">
         <span>
           <img id="waterIcon" className="titleElementIcon" src="../element-icons/WATER.png" />
