@@ -28,17 +28,11 @@
   color: #61dafb;
 }
 
-
-.titleHead {
-  color: white;
-  background-color: #202020;
-}
-
-h1 {
+.title {
+  font-size: 32pt;
   text-align: center;
-  font-size: 42pt;
-  font-family: "Herculanum";
-
+  margin-top: 10px;
+  color: black;
 }
 
 .titleElementIcon {

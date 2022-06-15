@@ -1,12 +1,8 @@
 import Card from "../../components/ui/Card";
-import SearchBar from '../searchBar/SearchBar';
+import SearchBar from "../searchBar/SearchBar";
 import "../../components/ui/card.css";
-import {
-  NavLink,
-  useSearchParams,
-} from "react-router-dom";
+import { NavLink, useSearchParams } from "react-router-dom";
 import "./character.css";
-
 
 import { getCharacters } from "../../character-data";
 
@@ -16,7 +12,8 @@ export default function Characters() {
 
   return (
     <nav>
-     <SearchBar />
+      <h1 className="title">Characters</h1>
+      <SearchBar />
       {characters
         ?.filter((character) => {
           let filter = searchParams.get("filter");
@@ -48,5 +45,4 @@ export default function Characters() {
         ))}
     </nav>
   );
-
 }

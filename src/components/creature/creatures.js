@@ -1,11 +1,8 @@
 import Card from "../../components/ui/Card";
-import SearchBar from '../searchBar/SearchBar';
+import SearchBar from "../searchBar/SearchBar";
 import "../../components/ui/card.css";
 import "./creature.css";
-import {
-  NavLink,
-  useSearchParams,
-} from "react-router-dom";
+import { NavLink, useSearchParams } from "react-router-dom";
 
 import { getCreatures } from "../../creature-data";
 
@@ -15,7 +12,8 @@ export default function Creatures() {
 
   return (
     <nav>
-     <SearchBar />
+      <h1 className="title">Creatures</h1>
+      <SearchBar />
       {creatures
         ?.filter((creature) => {
           let filter = searchParams.get("filter");
@@ -32,9 +30,7 @@ export default function Creatures() {
             <Card className="card">
               <div className={"cardContent creature"}>
                 <h3 className="cardTitle">{creature.name}</h3>
-                <div
-                  className={"cardImgContainer creatureImg"}
-                >
+                <div className={"cardImgContainer creatureImg"}>
                   <img
                     className={"cardImg"}
                     src={creature.photo}
@@ -47,5 +43,4 @@ export default function Creatures() {
         ))}
     </nav>
   );
-
 }
