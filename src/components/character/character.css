@@ -1,5 +1,5 @@
 .all {
-  background: linear-gradient(-45deg, #a4daf5 20%, #b7f5b5 40%, #f78b8b 60%, #f2d296 80%);
+  background: linear-gradient(-45deg, #a4daf5 20%, #b7f5b5 30% 45%, #f78b8b 55% 70%, #f2d296 80%);
 }
 
 .water {
@@ -23,7 +23,7 @@
 }
 
 .allImg {
-  background: linear-gradient(-45deg, #75afcb 20%, #55a253 40%, #cc1d1d 60%, #fea90d 80%);
+  background: linear-gradient(-45deg, #75afcb 20%, #55a253 30% 45%, #cc1d1d 55% 70%, #fea90d 80%);
 }
 
 .waterImg {

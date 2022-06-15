@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div>
       <Headerbar />
-      <div className="titleHead">
+      {/* <div className="titleHead">
         <span>
           <img id="waterIcon" className="titleElementIcon" src="../element-icons/WATER.png" />
         </span>
@@ -28,7 +28,7 @@ export default function App() {
           {" | "}
           <Link className="navLink" to="/creatures">Creatures</Link>
         </nav>
-      </div>
+      </div> */}
 
       <Outlet />
       <p className="disclaimer">
