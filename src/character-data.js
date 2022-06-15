@@ -49,6 +49,15 @@ let characters = [
     "Beifong. Upon discovering badgermoles, earthbending animals who are also blind, she learned how to use earthbending as an extension of her senses." + 
     " This gave her the ability to \"see\" every vibration that passes through the ground.",
   },
+  {
+    id: 6,
+    name: "Monk Gyatso",
+    element: "air",
+    photo: "https://64.media.tumblr.com/1b9bdb8e754c0e8f56d2e746106248d4/tumblr_p29floclqd1tyjd90o1_400.png",
+    description: "Monk Gyatso was Avatar Aang's guardian, mentor, and father figure before the beginning of the" +
+    " Hundred Year War, as well as a member of the Council of Elders. According to Aang, he was the greatest airbender" + 
+    " in the world during his time.",
+  },
 ];
 
 export function getCharacters() {
