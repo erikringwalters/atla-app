@@ -2,7 +2,7 @@ let characters = [
   {
     id: 1,
     name: "Aang",
-    element: "air",
+    element: "all",
     photo: "https://upload.wikimedia.org/wikipedia/en/8/86/Avatar_Aang.png",
     description: "Aang was a male Air Nomad born in 12 BG and the Avatar during the Hundred Year War, succeeding" +
       " Avatar Roku and preceding Avatar Korra. As the Avatar of his time, he was the only person capable of using all" +
