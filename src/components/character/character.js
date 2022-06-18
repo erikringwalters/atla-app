@@ -1,20 +1,39 @@
-import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useParams, useNavigate, useLocation, Link } from "react-router-dom";
 import { getCharacter } from "../../character-data";
+import { useEffect } from "react";
 
 import Card from "../ui/Card";
 
 export default function Character() {
-  let navigate = useNavigate();
-  let location = useLocation();
   let params = useParams();
   let character = getCharacter(params.characterName);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
-      <Card>
-        <h2>{character.name}</h2>
-        <img src={character.photo} />
-        <p>{character.description}</p>
+      <div>
+        <Link to="/characters" className="backBtn">
+          Back to Characters
+        </Link>
+      </div>
+      <Card className="card cardWDetails">
+        <div className={"cardContent " + character.element}>
+          <h3 className="cardTitle">{character.name}</h3>
+          <div className={"cardImgContainer " + character.element + "Img"}>
+            <img
+              className={"cardImg"}
+              src={character.photo}
+              alt={character.name}
+            />
+          </div>
+        </div>
       </Card>
+      <div className="desc">
+        <p>{character.description}</p>
+      </div>
     </div>
   );
 }

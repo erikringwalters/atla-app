@@ -22,12 +22,12 @@ export default function Headerbar() {
         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
       </NavDropdown> */}
     </Nav>
-    <Nav>
+    {/* <Nav>
       <Nav.Link href="#deets">More deets</Nav.Link>
       <Nav.Link eventKey={2} href="#memes">
         Dank memes
       </Nav.Link>
-    </Nav>
+    </Nav> */}
   </Navbar.Collapse>
   </Container>
 </Navbar>
