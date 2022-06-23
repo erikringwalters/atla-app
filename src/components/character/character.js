@@ -19,20 +19,22 @@ export default function Character() {
           Back to Characters
         </Link>
       </div>
-      <Card className="card cardWDetails">
-        <div className={"cardContent " + character.element}>
-          <h3 className="cardTitle">{character.name}</h3>
-          <div className={"cardImgContainer " + character.element + "Img"}>
-            <img
-              className={"cardImg"}
-              src={character.photo}
-              alt={character.name}
-            />
+      <div className="cardWDetails">
+        <Card className="card">
+          <div className={"cardContent " + character.element}>
+            <h3 className="cardTitle">{character.name}</h3>
+            <div className={"cardImgContainer " + character.element + "Img"}>
+              <img
+                className={"cardImg"}
+                src={character.photo}
+                alt={character.name}
+              />
+            </div>
           </div>
+        </Card>
+        <div className="desc">
+          <p>{character.description}</p>
         </div>
-      </Card>
-      <div className="desc">
-        <p>{character.description}</p>
       </div>
     </div>
   );
