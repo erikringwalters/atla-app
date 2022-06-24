@@ -8,7 +8,7 @@ export default function Headerbar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container className="navContainer">
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="/home">
           ATLA - Trading Cards!
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
