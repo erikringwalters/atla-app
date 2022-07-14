@@ -3,6 +3,7 @@ import SearchBar from "../searchBar/SearchBar";
 import "../../components/ui/card.css";
 import { NavLink, useSearchParams } from "react-router-dom";
 import "./character.css";
+import { MotionCard } from "../MotionCard";
 
 import { getCharacters } from "../../character-data";
 
