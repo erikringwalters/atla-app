@@ -1,27 +1,19 @@
 import { Link } from "react-router-dom";
 import Card from "../ui/Card";
-import { ParallaxBanner } from "react-scroll-parallax";
 
 import { getCharacter } from "../../character-data";
 import { getCreature } from "../../creature-data";
+import MovingCard from "../movingCard/movingCard";
 
 export default function Home() {
   let character = getCharacter("Aang");
   let creature = getCreature("Flying Bison");
+  const card = new MovingCard(document.getElementById("card"));
 
   return (
     <div id="homeDiv">
       <div>
-        {/* <ParallaxBanner
-          layers={[
-            {
-              image:
-                "https://hips.hearstapps.com/hmg-prod/images/avatar-nickelodeon-900x450-1590004760.png?crop=1xw:1xh;center,top&resize=1200:*",
-              speed: -20,
-            },
-          ]}
-          style={{ aspectRatio: "2 / 1" }}
-        /> */}
+    <MovingCard id="card"></MovingCard>
         <Link to="/characters">
           <h2>Characters</h2>
           <div className="cardWDetails">
