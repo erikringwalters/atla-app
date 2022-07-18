@@ -1,3 +1,4 @@
+@import "~wtc-perspective-card";
 .flexContainer {
   justify-items: center;
   display: flex;
