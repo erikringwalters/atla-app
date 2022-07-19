@@ -1,0 +1,76 @@
+@import "~wtc-perspective-card";
+.flexContainer {
+  justify-items: center;
+  display: flex;
+  position: relative;
+}
+section {
+  margin: 50px auto;
+  width: 900px;
+}
+.cardContainer {
+  height: 418px;
+  width: 300px;
+}
+.perspective-card {
+  height: 418px;
+  perspective: 350px;
+  position: relative;
+  touch-action: none;
+  transform-style: preserve-3d;
+  width: 300px;
+}
+.perspective-card__shine {
+  border-radius: 15px;
+  left: 0px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  transform: translateZ(.5px);
+  width: 100%;
+}
+.perspective-card__transformer {
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+.perspective-card__artwork {
+  position: absolute;
+  top: 0;
+}
+.perspective-card__artwork--front {
+}
+.perspective-card__artwork--rear {
+  transform: translateZ(-.5px) scaleX(-1);
+}
+.perspective-card img {
+  border-radius: 15px;
+  box-shadow: 5px 5px 0px rgba(0,0,0,.0);
+  display: block;
+  max-width: 100%;
+  transition: .5s linear box-shadow;
+}
+.perspective-card--over img {
+  box-shadow: 5px 5px 20px rgba(0,0,0,.4);
+}
+
+.perspective-card--matte {
+  background-color: rgba(0,0,0,.5);
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity .5s linear;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.perspective-card--matte.modal {
+  opacity: 1;
+}
+
+.perspective-card.modal {
+  z-index: 1001;
+}
