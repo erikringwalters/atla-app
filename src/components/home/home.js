@@ -13,7 +13,14 @@ export default function Home() {
   return (
     <div id="homeDiv">
       <div>
-    <MovingCard id="card"></MovingCard>
+        <MovingCard
+          id="card"
+          name={character.name}
+          element={character.element}
+          photo={character.photo}
+          description={character.description}
+        ></MovingCard>
+
         <Link to="/characters">
           <h2>Characters</h2>
           <div className="cardWDetails">
