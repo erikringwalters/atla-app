@@ -47,6 +47,8 @@ export default function MovingCard(props) {
       data-ambient
     >
       <div className="perspective-card__transformer">
+      <div className="perspective-card__shine"></div>
+
         <div className="card__artwork perspective-card__artwork--front">
           <div className="cardContainer" id="card">
             {/* <Card className="card"> */}
@@ -54,7 +56,7 @@ export default function MovingCard(props) {
               <h3 className="cardTitle">{props.name}</h3>
               <div
                 className={
-                  "perspective-card__artwork card__artwork--front cardImgContainer " +
+                  "cardImgContainer " +
                   props.element +
                   "Img"
                 }
@@ -65,7 +67,6 @@ export default function MovingCard(props) {
                   alt={props.name}
                 />
               </div>
-              <div className="perspective-card__shine"></div>
             </div>
             {/* </Card> */}
           </div>

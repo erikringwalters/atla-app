@@ -23,7 +23,8 @@ export default function Home() {
     <MovingCard
     name={character.name}
     photo={character.photo}
-    element={character.element}>
+    element={character.element}
+    >
 
     </MovingCard>
 
