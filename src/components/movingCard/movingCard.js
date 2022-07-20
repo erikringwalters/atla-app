@@ -12,8 +12,11 @@ import {
 } from "react-router-dom";
 
 export default function MovingCard(props) {
+  console.clear();
+  console.log(props);
   useEffect(() => {
     if (document.getElementById("card")) {
+ 
       const card = new PerspectiveCard(document.getElementById("card"));
     }
   }, []);
@@ -37,17 +40,37 @@ export default function MovingCard(props) {
     //   </div>
     // </div>
 
-    <div className="cardContainer">
-      {/* // <Card>
-      //   <div className={props.element}>
-      //     <h3 className="cardTitle">{props.name}</h3>
-      //     <div className={"cardImgContainer " + props.element + "Img"}>
-      //       <div>
-      //         <img className={"cardImg"} src={props.photo} alt={props.name} />
-      //       </div>
-      //     </div>
-      //   </div>
-      // </Card> */}
+    <div
+      id="card"
+      className="perspective-card"
+      data-decorator="PerspectiveCard"
+      data-ambient
+    >
+      <div className="perspective-card__transformer">
+        <div className="card__artwork perspective-card__artwork--front">
+          <div className="cardContainer" id="card">
+            {/* <Card className="card"> */}
+            <div className={"cardContent " + props.element}>
+              <h3 className="cardTitle">{props.name}</h3>
+              <div
+                className={
+                  "perspective-card__artwork card__artwork--front cardImgContainer " +
+                  props.element +
+                  "Img"
+                }
+              >
+                <img
+                  className={"cardImg"}
+                  src={props.photo}
+                  alt={props.name}
+                />
+              </div>
+              <div className="perspective-card__shine"></div>
+            </div>
+            {/* </Card> */}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

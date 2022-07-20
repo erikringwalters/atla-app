@@ -6,7 +6,6 @@ import { getCreature } from "../../creature-data";
 import MovingCard from "../movingCard/movingCard";
 import PerspectiveCard from "wtc-perspective-card";
 import { useEffect } from "react";
-// import "./movingCard.css";
 
 export default function Home() {
   let character = getCharacter("Aang");
@@ -21,53 +20,31 @@ export default function Home() {
 
   return (
     <div id="homeDiv">
-      <div >
-        <div id="card" className="perspective-card" data-decorator="PerspectiveCard" data-ambient>
-          <div className="perspective-card__transformer">
-            <div className="card__artwork perspective-card__artwork--front">
-              <div className="cardContainer" id="card">
-                <Card className="card">
-                  <div className={"cardContent " + character.element}>
-                    <h3 className="cardTitle">{character.name}</h3>
-                    <div
-                      className={
-                        "perspective-card__artwork card__artwork--front cardImgContainer " + character.element + "Img"
-                      }
-                    >
-                      <img
-                        className={"cardImg"}
-                        src={character.photo}
-                        alt={character.name}
-                      />
-                    </div>
-                    <div className="perspective-card__shine"></div>
-                  </div>
-                </Card>
+    <MovingCard
+    name={character.name}
+    photo={character.photo}
+    element={character.element}>
+
+    </MovingCard>
+
+      <Link to="/characters">
+        <h2>Characters</h2>
+        <div className="cardWDetails">
+          <Card className="card">
+            <div className={"cardContent " + character.element}>
+              <h3 className="cardTitle">{character.name}</h3>
+              <div className={"cardImgContainer " + character.element + "Img"}>
+                <img
+                  className={"cardImg"}
+                  src={character.photo}
+                  alt={character.name}
+                />
               </div>
             </div>
-          </div>
+          </Card>
         </div>
-
-        <Link to="/characters">
-          <h2>Characters</h2>
-          <div className="cardWDetails">
-            <Card className="card">
-              <div className={"cardContent " + character.element}>
-                <h3 className="cardTitle">{character.name}</h3>
-                <div
-                  className={"cardImgContainer " + character.element + "Img"}
-                >
-                  <img
-                    className={"cardImg"}
-                    src={character.photo}
-                    alt={character.name}
-                  />
-                </div>
-              </div>
-            </Card>
-          </div>
-        </Link>
-        {/*
+      </Link>
+      {/*
       </div>
       <div>
         <Link to="/creatures">
@@ -87,7 +64,6 @@ export default function Home() {
             </Card>
           </div>
         </Link> */}
-      </div>
     </div>
   );
 }
