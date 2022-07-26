@@ -5,6 +5,7 @@ import { NavLink, useSearchParams } from "react-router-dom";
 import "./character.css";
 
 import { getCharacters } from "../../character-data";
+import MovingCard from "../movingCard/movingCard";
 
 export default function Characters() {
   let characters = getCharacters();
@@ -27,7 +28,7 @@ export default function Characters() {
             to={`/characters/${character.name}`}
             key={character.name}
           >
-            <Card className="card">
+            {/* <Card className="card">
               <div className={"cardContent " + character.element}>
                 <h3 className="cardTitle">{character.name}</h3>
                 <div
@@ -40,7 +41,13 @@ export default function Characters() {
                   />
                 </div>
               </div>
-            </Card>
+            </Card> */}
+
+            <MovingCard
+            name={character.name}
+            photo={character.photo}
+            element={character.element}
+            ></MovingCard>
           </NavLink>
         ))}
     </nav>
