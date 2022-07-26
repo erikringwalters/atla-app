@@ -3,6 +3,7 @@
     text-align: center;
     margin: auto;
     margin-left: 10px;
+    width: 400px;
   }
   .cardContent {
     border: 15px solid #ffbb00;

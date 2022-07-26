@@ -38,6 +38,7 @@ export default function MovingCard(props) {
 
   return (
 
+    <div className="cardContainer">
     <div
       // id="card"
       className="perspective-card"
@@ -67,6 +68,7 @@ export default function MovingCard(props) {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

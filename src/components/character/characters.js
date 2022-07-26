@@ -23,32 +23,17 @@ export default function Characters() {
           return name.startsWith(filter.toLowerCase());
         })
         ?.map((character) => (
-          <NavLink
-            className="cardLink"
-            to={`/characters/${character.name}`}
-            key={character.name}
-          >
-            {/* <Card className="card">
-              <div className={"cardContent " + character.element}>
-                <h3 className="cardTitle">{character.name}</h3>
-                <div
-                  className={"cardImgContainer " + character.element + "Img"}
-                >
-                  <img
-                    className={"cardImg"}
-                    src={character.photo}
-                    alt={character.name}
-                  />
-                </div>
-              </div>
-            </Card> */}
-
+          // <NavLink
+          //   className="cardLink"
+          //   to={`/characters/${character.name}`}
+          //   key={character.name}
+          // >
             <MovingCard
             name={character.name}
             photo={character.photo}
             element={character.element}
             ></MovingCard>
-          </NavLink>
+          // </NavLink>
         ))}
     </nav>
   );
