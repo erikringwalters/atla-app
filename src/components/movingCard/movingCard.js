@@ -37,38 +37,31 @@ export default function MovingCard(props) {
   }, []);
 
   return (
-
-    <div className="cardContainer">
-    <div
-      // id="card"
-      className="perspective-card"
-      data-decorator="PerspectiveCard"
-      // data-ambient
-    >
-      <div className="perspective-card__transformer">
-      <div className="perspective-card__shine"></div>
-      <div className="card__artwork perspective-card__artwork--front">
-          <div className="cardContainer" id="card">
-            <div className={"cardContent " + props.element}>
-              <h3 className="cardTitle">{props.name}</h3>
-              <div
-                className={
-                  "cardImgContainer " +
-                  props.element +
-                  "Img"
-                }
-              >
-                <img
-                  className={"cardImg"}
-                  src={props.photo}
-                  alt={props.name}
-                />
+      <div className="cardContainer">
+        <div
+          // id="card"
+          className="perspective-card"
+          data-decorator="PerspectiveCard"
+          // data-ambient
+        >
+          <div className="perspective-card__transformer">
+            <div className="perspective-card__shine"></div>
+            <div className="card__artwork perspective-card__artwork--front">
+              <div className="cardContainer" id="card">
+                <div className={"cardContent " + props.element}>
+                  <h3 className="cardTitle">{props.name}</h3>
+                  <div className={"cardImgContainer " + props.element + "Img"}>
+                    <img
+                      className={"cardImg"}
+                      src={props.photo}
+                      alt={props.name}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
   );
 }
