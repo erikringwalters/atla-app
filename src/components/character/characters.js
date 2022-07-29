@@ -16,30 +16,28 @@ export default function Characters() {
       <h1 className="title">Characters</h1>
       <SearchBar />
       <div className="flexContainer">
+        {characters
+          ?.filter((character) => {
+            let filter = searchParams.get("filter");
+            if (!filter) return true;
+            let name = character.name.toLowerCase();
+            return name.startsWith(filter.toLowerCase());
+          })
 
-      {characters
-        ?.filter((character) => {
-          let filter = searchParams.get("filter");
-          if (!filter) return true;
-          let name = character.name.toLowerCase();
-          return name.startsWith(filter.toLowerCase());
-        })
-        
-        ?.map((character) => (
-          // <NavLink
-          //   className="cardLink"
-          //   to={`/characters/${character.name}`}
-          //   key={character.name}
-          // >
+          ?.map((character) => (
+            // <NavLink
+            //   className="cardLink"
+            //   to={`/characters/${character.name}`}
+            //   key={character.name}
+            // >
             <MovingCard
               name={character.name}
               photo={character.photo}
               element={character.element}
             ></MovingCard>
-          // </NavLink>
-        ))}
-                  </div>
-
+            // </NavLink>
+          ))}
+      </div>
     </nav>
   );
 }

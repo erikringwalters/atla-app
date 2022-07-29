@@ -42,6 +42,12 @@
   background-color: #fea90d;
 }
 
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .noneImg {
   background-color: #787878;
 }
