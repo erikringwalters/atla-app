@@ -41,6 +41,12 @@ section {
 .perspective-card__artwork--rear {
   transform: translateZ(-.5px) scaleX(-1);
 }
+.cardImgContainer {
+  width: 90%;
+}
+.cardImg {
+  height: 11rem;
+}
 .perspective-card img {
 }
 .perspective-card--over img {
