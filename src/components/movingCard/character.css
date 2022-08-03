@@ -18,6 +18,10 @@
   background-color: #f2d296;
 }
 
+.creature {
+  background-color: #edd0c0;
+}
+
 .none {
   background-color: #bebebe;
 }
@@ -40,6 +44,16 @@
 
 .airImg {
   background-color: #fea90d;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.creatureImg {
+  background-color: #a88876;
 }
 
 .noneImg {

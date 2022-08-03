@@ -1,8 +1,7 @@
-import Card from "../../components/ui/Card";
 import SearchBar from "../searchBar/SearchBar";
-import "../../components/ui/card.css";
+import "../ui/card.css";
 import { NavLink, useSearchParams } from "react-router-dom";
-import "./character.css";
+// import "./character.css";
 
 import { getCharacters } from "../../character-data";
 import MovingCard from "../movingCard/movingCard";
@@ -25,17 +24,19 @@ export default function Characters() {
           })
 
           ?.map((character) => (
-            // <NavLink
-            //   className="cardLink"
-            //   to={`/characters/${character.name}`}
-            //   key={character.name}
-            // >
+            <NavLink
+              to={`/characters/${character.name}`}
+              key={character.name}
+            >
             <MovingCard
+              cardID={character.name + 'Card'}
               name={character.name}
               photo={character.photo}
               element={character.element}
+              dataAmbient='true'
+              clickable='false'
             ></MovingCard>
-            // </NavLink>
+            </NavLink>
           ))}
       </div>
     </nav>

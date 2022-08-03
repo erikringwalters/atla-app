@@ -1,3 +1,10 @@
 #homeDiv { 
     text-align: center;
+ }
+.homeLink {
+    color: black;
+}
+h2 {
+    font-size: 32pt;
+    margin-top: 10px;
 }

@@ -1,8 +1,10 @@
 import { useParams, useNavigate, useLocation, Link } from "react-router-dom";
 import { getCharacter } from "../../character-data";
 import { useEffect } from "react";
+import MovingCard from "../movingCard/movingCard";
 
 import Card from "../ui/Card";
+import { propTypes } from "react-bootstrap/esm/Image";
 
 export default function Character() {
   let params = useParams();
@@ -20,18 +22,13 @@ export default function Character() {
         </Link>
       </div>
       <div className="cardWDetails">
-        <Card className="card">
-          <div className={"cardContent " + character.element}>
-            <h3 className="cardTitle">{character.name}</h3>
-            <div className={"cardImgContainer " + character.element + "Img"}>
-              <img
-                className={"cardImg"}
-                src={character.photo}
-                alt={character.name}
-              />
-            </div>
-          </div>
-        </Card>
+        <MovingCard
+          cardID={character.name + "Card"}
+          name={character.name}
+          photo={character.photo}
+          element={character.element}
+          dataAmbient="true"
+        ></MovingCard>
         <div className="desc">
           <p>{character.description}</p>
         </div>

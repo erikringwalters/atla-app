@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { getCreature } from "../../creature-data";
 import { useEffect } from "react";
+import MovingCard from "../movingCard/movingCard";
 
 import "./creature.css";
 import Card from "../ui/Card";
@@ -20,18 +21,13 @@ export default function Creature() {
         </Link>
       </div>
       <div className="cardWDetails">
-        <Card className="card">
-          <div className={"cardContent creature"}>
-            <h3 className="cardTitle">{creature.name}</h3>
-            <div className={"cardImgContainer creatureImg"}>
-              <img
-                className={"cardImg"}
-                src={creature.photo}
-                alt={creature.name}
-              />
-            </div>
-          </div>
-        </Card>
+      <MovingCard
+          cardID={creature.name + "Card"}
+          name={creature.name}
+          photo={creature.photo}
+          element={'creature'}
+          dataAmbient="true"
+        ></MovingCard>
         <div className="desc">
           <p>{creature.description}</p>
         </div>

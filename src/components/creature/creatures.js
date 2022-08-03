@@ -1,8 +1,9 @@
-import Card from "../../components/ui/Card";
+// import Card from "../../components/ui/Card";
 import SearchBar from "../searchBar/SearchBar";
-import "../../components/ui/card.css";
-import "./creature.css";
+// import "../../components/ui/card.css";
+// import "./creature.css";
 import { NavLink, useSearchParams } from "react-router-dom";
+import MovingCard from "../movingCard/movingCard";
 
 import { getCreatures } from "../../creature-data";
 
@@ -14,6 +15,7 @@ export default function Creatures() {
     <nav>
       <h1 className="title">Creatures</h1>
       <SearchBar />
+      <div className="flexContainer">
       {creatures
         ?.filter((creature) => {
           let filter = searchParams.get("filter");
@@ -27,20 +29,17 @@ export default function Creatures() {
             to={`/creatures/${creature.name}`}
             key={creature.name}
           >
-            <Card className="card">
-              <div className={"cardContent creature"}>
-                <h3 className="cardTitle">{creature.name}</h3>
-                <div className={"cardImgContainer creatureImg"}>
-                  <img
-                    className={"cardImg"}
-                    src={creature.photo}
-                    alt={creature.name}
-                  />
-                </div>
-              </div>
-            </Card>
+            <MovingCard
+              cardID={creature.name + 'Card'}
+              name={creature.name}
+              photo={creature.photo}
+              element={'creature'}
+              dataAmbient='true'
+              clickable='false'
+            ></MovingCard>
           </NavLink>
         ))}
+        </div>
     </nav>
   );
 }
