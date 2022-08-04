@@ -3,8 +3,6 @@ import { getCharacter } from "../../character-data";
 import { useEffect } from "react";
 import MovingCard from "../movingCard/movingCard";
 
-import Card from "../ui/Card";
-import { propTypes } from "react-bootstrap/esm/Image";
 
 export default function Character() {
   let params = useParams();

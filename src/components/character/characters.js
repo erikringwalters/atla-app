@@ -1,7 +1,5 @@
 import SearchBar from "../searchBar/SearchBar";
-import "../ui/card.css";
 import { NavLink, useSearchParams } from "react-router-dom";
-
 import { getCharacters } from "../../character-data";
 import MovingCard from "../movingCard/movingCard";
 
@@ -32,8 +30,7 @@ export default function Characters() {
               name={character.name}
               photo={character.photo}
               element={character.element}
-              dataAmbient='true'
-              clickable='false'
+              dataAmbient='false'
             ></MovingCard>
             </NavLink>
           ))}

@@ -31,8 +31,7 @@ export default function Creatures() {
               name={creature.name}
               photo={creature.photo}
               element={'creature'}
-              dataAmbient='true'
-              clickable='false'
+              dataAmbient='false'
             ></MovingCard>
           </NavLink>
         ))}

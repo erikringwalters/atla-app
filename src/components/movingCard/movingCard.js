@@ -2,7 +2,8 @@ import PerspectiveCard from "wtc-perspective-card";
 import "./movingCard.css";
 import "./character.css";
 import "./creature.css";
-import Card from "../ui/Card";
+import "../card/card.css";
+
 import { useEffect } from "react";
 import {
   useParams,
