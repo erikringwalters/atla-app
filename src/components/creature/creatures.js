@@ -1,7 +1,4 @@
-// import Card from "../../components/ui/Card";
 import SearchBar from "../searchBar/SearchBar";
-// import "../../components/ui/card.css";
-// import "./creature.css";
 import { NavLink, useSearchParams } from "react-router-dom";
 import MovingCard from "../movingCard/movingCard";
 

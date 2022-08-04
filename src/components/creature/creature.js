@@ -3,8 +3,6 @@ import { getCreature } from "../../creature-data";
 import { useEffect } from "react";
 import MovingCard from "../movingCard/movingCard";
 
-import "./creature.css";
-import Card from "../ui/Card";
 export default function Creature() {
   let params = useParams();
   let creature = getCreature(params.creatureName);
