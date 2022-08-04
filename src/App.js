@@ -1,13 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Outlet, Link, NavLink } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Headerbar from "./components/headerBar/Headerbar";
-import { getCharacter } from "./character-data";
-import { getCreature } from "./creature-data";
+import ScrollToTop from './components/scrollToTop/scrollToTop';
 
 export default function App() {
   return (
     <div>
+      <ScrollToTop />
       <Headerbar />
       
       <Outlet />

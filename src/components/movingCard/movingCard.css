@@ -5,10 +5,6 @@
   position: relative;
 }
 
-.cardContainer {
-
-}
-
 .perspective-card {
   perspective: 500px;
   position: relative;

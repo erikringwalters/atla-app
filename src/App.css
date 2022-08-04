@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+#top {
+  height: 0px;
+  width: 0px;
+  top: 0;
+  left: 0;
+}
+
 .title {
   font-size: 32pt;
   text-align: center;
