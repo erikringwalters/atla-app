@@ -1,42 +1,23 @@
 import PerspectiveCard from "wtc-perspective-card";
 import "./movingCard.css";
-import "./character.css";
+import "./cardStyles.css";
 import "../card/card.css";
 
 import { useEffect } from "react";
-import {
-  useParams,
-  useNavigate,
-  useLocation,
-  NavLink,
-  Link,
-} from "react-router-dom";
 
 export default function MovingCard(props) {
   console.clear();
-  console.log(props);
-  console.log(props.cardID !== "undefined");
   useEffect(() => {
-    console.log(props.cardID);
-
-    if (
-      typeof props.cardID !== undefined &&
-      document.getElementById(props.cardID)
-    ) {
-      const card = new PerspectiveCard(document.getElementById(props.cardID));
-    }
-
-  }, []);
-
+    const card = new PerspectiveCard(document.getElementById(props.cardID));
+  }, [props.cardID]);
 
   return (
     <div className="cardContainer">
       <div
         id={props.cardID}
         className="perspective-card"
-        data-decorator="PerspectiveCard"
+        data-decorator="ClickablePerspectiveCard"
         data-ambient={props.dataAmbient}
-        pointer-controlled={props.clickable}
       >
         <div className="perspective-card__transformer">
           <div className="perspective-card__shine"></div>

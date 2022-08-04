@@ -1,4 +1,4 @@
-import { useParams, useNavigate, useLocation, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { getCharacter } from "../../character-data";
 import { useEffect } from "react";
 import MovingCard from "../movingCard/movingCard";

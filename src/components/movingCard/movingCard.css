@@ -1,26 +1,22 @@
 @import "~wtc-perspective-card";
+
 .flexContainer {
   justify-items: center;
-  display: flex;
-  position: relative;
-}
-section {
-  margin: 50px auto;
-  width: 900px;
-}
-.cardContainer {
-  max-width: 30rem;
   position: relative;
 }
 
+.cardContainer {
+
+}
+
 .perspective-card {
-  perspective: 600px;
+  perspective: 500px;
   position: relative;
   touch-action: none;
   transform-style: preserve-3d;
   width: 300px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
   margin-left: 30px;
   margin-right: 30px;
 }
@@ -29,6 +25,7 @@ section {
   border-radius: 10px;
   transform: translateZ(.5px);
 }
+
 .perspective-card__transformer {
   height: 100%;
   position: relative;

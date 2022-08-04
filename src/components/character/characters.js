@@ -2,10 +2,21 @@ import SearchBar from "../searchBar/SearchBar";
 import { NavLink, useSearchParams } from "react-router-dom";
 import { getCharacters } from "../../character-data";
 import MovingCard from "../movingCard/movingCard";
+import { useEffect } from "react";
 
 export default function Characters() {
   let characters = getCharacters();
   let [searchParams] = useSearchParams();
+
+  function isMobile() {
+    return window.matchMedia(
+      "only screen and (max-width: 760px)"
+    ).matches;
+  };
+
+  useEffect(() => {
+    console.log('is mobile: ' + isMobile());
+  }, []);
 
   return (
     <nav>
@@ -30,7 +41,7 @@ export default function Characters() {
               name={character.name}
               photo={character.photo}
               type={character.type}
-              dataAmbient='false'
+              dataAmbient={isMobile()}
             ></MovingCard>
             </NavLink>
           ))}
