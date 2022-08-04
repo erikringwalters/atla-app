@@ -29,7 +29,7 @@ export default function Characters() {
               cardID={character.name + 'Card'}
               name={character.name}
               photo={character.photo}
-              element={character.element}
+              type={character.type}
               dataAmbient='false'
             ></MovingCard>
             </NavLink>

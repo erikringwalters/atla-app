@@ -24,7 +24,7 @@ export default function Character() {
           cardID={character.name + "Card"}
           name={character.name}
           photo={character.photo}
-          element={character.element}
+          type={character.type}
           dataAmbient="true"
         ></MovingCard>
         <div className="desc">

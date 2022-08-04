@@ -2,7 +2,7 @@ let characters = [
   {
     id: 1,
     name: "Aang",
-    element: "all",
+    type: "all",
     photo: "https://upload.wikimedia.org/wikipedia/en/8/86/Avatar_Aang.png",
     description: "Aang was a male Air Nomad born in 12 BG and the Avatar during the Hundred Year War, succeeding" +
       " Avatar Roku and preceding Avatar Korra. As the Avatar of his time, he was the only person capable of using all" +
@@ -12,7 +12,7 @@ let characters = [
   {
     id: 2,
     name: "Katara",
-    element: "water",
+    type: "water",
     photo: "https://upload.wikimedia.org/wikipedia/en/f/fb/Katara.png",
     description: "Katara is a waterbending master, born in the Southern Water Tribe to Chief Hakoda and his wife Kya. During her childhood, she was the only" +
       "waterbender living in the Southern Water Tribe. After losing her mother in a Fire Nation raid and her father left to battle against the Fire Nation in the " +
@@ -23,7 +23,7 @@ let characters = [
   {
     id: 3,
     name: "Sokka",
-    element: "none",
+    type: "none",
     photo: "https://upload.wikimedia.org/wikipedia/en/c/cc/Sokka.png",
     description: "Sokka was a Water Tribe warrior of the Southern Water Tribe and the son of Chief Hakoda and Kya. Following the death of his mother and his father's " + 
     "departure for war, Sokka was raised by his grandmother Kanna along with his younger sister Katara.",
@@ -31,7 +31,7 @@ let characters = [
   {
     id: 4,
     name: "Zuko",
-    element: "fire",
+    type: "fire",
     photo: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b8d2b12-21e8-4931-8a6d-fb9ecdd60383/de4zj6r-08b8a337-4c32-46d5-9cf9-8c6f6d66b6ce.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViOGQyYjEyLTIxZTgtNDkzMS04YTZkLWZiOWVjZGQ2MDM4M1wvZGU0emo2ci0wOGI4YTMzNy00YzMyLTQ2ZDUtOWNmOS04YzZmNmQ2NmI2Y2UucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.qqDvvtcdb5f8PbE6z96Dp34zyWSOpXflLttura-pPlY",
     description: "Zuko is a Fire Nation royal and firebending master who reigned as Fire Lord from 100 AG until his abdication in 167 AG. He is" +
      " the eldest child and only son of Princess Ursa and Fire Lord Ozai. Originally the primary enemy of Team Avatar, Zuko devoted three years to" +
@@ -42,7 +42,7 @@ let characters = [
   {
     id: 5,
     name: "Toph",
-    element: "earth",
+    type: "earth",
     photo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Toph_Beifong.png/220px-Toph_Beifong.png",
     description: "Toph Beifong is an earthbending master, one of the most powerful of her time, and the discoverer of metalbending. Blind since " + 
     "birth, Toph was constantly treated condescendingly because of her visual impairment, particularly by her overprotective parents, Lao and Poppy " + 
@@ -52,7 +52,7 @@ let characters = [
   {
     id: 6,
     name: "Monk Gyatso",
-    element: "air",
+    type: "air",
     photo: "https://64.media.tumblr.com/1b9bdb8e754c0e8f56d2e746106248d4/tumblr_p29floclqd1tyjd90o1_400.png",
     description: "Monk Gyatso was Avatar Aang's guardian, mentor, and father figure before the beginning of the" +
     " Hundred Year War, as well as a member of the Council of Elders. According to Aang, he was the greatest airbender" + 
